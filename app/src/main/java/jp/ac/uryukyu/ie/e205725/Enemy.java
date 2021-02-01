@@ -9,10 +9,35 @@ package jp.ac.uryukyu.ie.e205725;
  * Created by tnal on 2016/11/13.
  */
 public class Enemy {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
+
+    public String getName (){
+        return this.name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public int getHitPoint (){
+        return this.hitPoint;
+    }
+    public void setHitPoint (int hitPoint){
+        this.hitPoint = hitPoint;
+    }
+    public int getAttack (){
+        return this.attack;
+    }
+    public void setAttack(int attack){
+        this.attack = attack;
+    }
+    public void setDead(boolean dead){
+        this.dead = dead;
+    }
+    public boolean getDead (){
+        return this.dead;
+    }
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。

@@ -13,28 +13,59 @@ public class Hero {
     private int hitPoint;
     private int attack;
     private boolean dead;
-
+    /**
+     * フィールドに指定された敵の名前を、取り出すメソッド
+     * @return this.name フィールドに指定された敵の名前
+     */
     public String getName (){
         return this.name;
     }
+    /**
+     * フィールドに指定された敵の名前に、任意の敵の名前を代入するメソッド
+     * @param name　任意の敵の名前（名前）
+     */
     public void setName(String name){
         this.name = name;
     }
+    /**
+     * フィールドに指定された敵のHPを、取り出すメソッド
+     * @return this.hitpoint  フィールドに指定された敵のHP
+     */
     public int getHitPoint (){
         return this.hitPoint;
     }
+     /**
+     * フィールドに指定された敵のHPに、任意の敵のHPを代入するメソッド
+     * @param hitpoint　任意の敵のHP
+     */
     public void setHitPoint (int hitPoint){
         this.hitPoint = hitPoint;
     }
+    /**
+     * フィールドに指定された敵の攻撃力を、取り出すメソッド
+     * @return this.attack  フィールドに指定された敵の攻撃力
+     */
     public int getAttack (){
         return this.attack;
     }
+    /**
+     * フィールドに指定された敵の攻撃力に、任意の敵の攻撃力を代入するメソッド
+     * @param attack　任意の敵の攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
-    public void setDead(boolean dead){
+    /**
+     * フィールドに指定された敵の生死状態に、任意の敵の生死状態を代入するメソッド
+     * @param attack　任意の敵の生死状態
+     */
+    void setDead(boolean dead){
         this.dead = dead;
     }
+    /**
+     * フィールドに指定された敵の生死状態を、取り出すメソッド
+     * @return this.attack  フィールドに指定された敵の生死状態
+     */
     public boolean getDead (){
         return this.dead;
     }
